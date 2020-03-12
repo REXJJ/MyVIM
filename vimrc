@@ -23,5 +23,8 @@ set wildmenu
 set hidden
 set showmatch
 set cursorline
+set background=dark
+set ttimeoutlen=0
+set incsearch
 highlight CursorLine cterm=bold ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 
