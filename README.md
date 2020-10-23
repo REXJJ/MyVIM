@@ -1,2 +1,2 @@
-# MyVIM
-This repository contains the vimrc file that I use to customize vim.
+# Dot Files
+This repository contains my .rc and config files for ubuntu.
