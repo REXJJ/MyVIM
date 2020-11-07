@@ -21,11 +21,12 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'mhinz/vim-signify'
+Plugin 'ErichDonGubler/vim-sublime-monokai'
 " Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 call vundle#end()
 filetype plugin indent on 
-colorscheme dracula
+colorscheme sublimemonokai 
 syntax enable
 set number
 set hlsearch
