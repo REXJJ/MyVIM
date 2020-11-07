@@ -28,7 +28,6 @@ colorscheme sublimemonokai
 syntax enable
 set number
 set hlsearch
-autocmd vimenter * NERDTree
 map <F2> :NERDTreeToggle<CR>
 syntax on
 set wildmenu
