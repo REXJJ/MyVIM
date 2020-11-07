@@ -3,18 +3,15 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-
+" vim plugins
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'dracula/vim', { 'name': 'dracula' }
-" Plugin 'ervandew/supertab'
 Plugin 'preservim/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'tomtom/tcomment_vim'
-" Plugin 'Shougo/neocomplete.vim'
-" Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -22,6 +19,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'itchyny/vim-gitbranch'
 Plugin 'mhinz/vim-signify'
 Plugin 'ErichDonGubler/vim-sublime-monokai'
+" Plugin 'dense-analysis/ale'
 " Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 
 call vundle#end()
@@ -46,6 +44,8 @@ set expandtab ts=4 sw=4 ai
 set splitbelow splitright
 set clipboard+=unnamedplus
 set rnu
+set foldmethod=syntax
+set nofoldenable
 
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
@@ -60,6 +60,8 @@ noremap <silent> <C-Up> :resize +3<CR>
 noremap <silent> <C-Down> :resize -3<CR>
 
 tnoremap <Esc> <C-\><C-n>
+
+" Git status format.
 
 let g:lightline = {
       \ 'active': {
@@ -229,6 +231,7 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" Custom vim functions
 function! InsertCopyright()
     let l:year = strftime("%Y")
     call append(0,"/**")
