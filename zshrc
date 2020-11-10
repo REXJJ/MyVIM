@@ -101,6 +101,13 @@ source ~/.scripts/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh
 alias bsh='. devel/setup.zsh'
 alias del='gio trash'
 alias meshlab='/home/rex/Downloads/MeshLab2020.03-linux.AppImage'
+alias mk='make'
+alias mj='make -j8'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push origin'
+alias gpm='git push origin master'
+alias gpd='git push origin devel'
 
 export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/snap/bin:/usr/local/cuda-10.2/bin
 # export PATH=/usr/local/cuda-10.2/bin${PATH:+:${PATH}}$

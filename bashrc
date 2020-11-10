@@ -94,6 +94,11 @@ alias l='ls -CF'
 alias bsh='. devel/setup.bash'
 alias del='gio trash'
 alias meshlab='/home/rex/Downloads/MeshLab2020.03-linux.AppImage'
+alias mk='make'
+alias mj='make -j8'
+alias ga='git add .'
+alias gc='git commit'
+alias gpo='git push origin'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
